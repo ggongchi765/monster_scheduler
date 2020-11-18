@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="47dp"
+        tools:context=".Monster">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="373dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="118dp"
+                android:background="@drawable/frame"
+                android:contentDescription="@string/app_name"
+                android:drawableEnd="@drawable/frame"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/moster_nomal"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/eat"
+                android:layout_centerInParent="true"
+                />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="먹이주기"
+        android:textColor="#ffffff"
+        android:textSize="64sp"
+        android:id="@+id/shop"/>
+
+
+    <Button
+        android:id="@+id/coin_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/coin_text"
+        android:layout_marginStart="143dp"
+        android:background="@drawable/coin"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/coin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="113dp"
+        android:text="0000"
+        android:textColor="@color/colorPrimaryDark"
+        android:textFontWeight="32"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/afood"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/shop"
+        android:layout_centerVertical="true"
+        android:background="@drawable/eatapple"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/cfood"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/shop"
+        android:layout_centerVertical="true"
+        android:background="@drawable/eatingchoco"
+        android:visibility="invisible" />
+
+</RelativeLayout>

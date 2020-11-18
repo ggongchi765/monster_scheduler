@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_margin="12dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_name"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:text="name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_date"
+        android:textSize="15sp"
+        android:layout_below="@+id/list_name"
+        android:text="date"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="완료"
+        android:id="@+id/list_button"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/list_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_name"
+        android:layout_toStartOf="@+id/list_button"
+        android:text="rate" />
+
+
+
+</RelativeLayout>
